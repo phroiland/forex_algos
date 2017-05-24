@@ -1,0 +1,386 @@
+$ brew install python
+
+$ pip install --upgrade pip setuptools
+
+$ pip install pyyaml
+
+$ pip install virtualenv
+
+$ virtualenv /tmp/falgo
+
+$ source /tmp/falgo/bin/activate
+
+$ cd forex_algotrading/
+
+$ pip install -r requirements.txt 
+
+$ cd post3/
+
+$ pip install pyyaml
+
+$ python runner.py 
+
+------ System online ------- 2017-05-15 10:45:19.816635
+OK 2017-05-15T14:45:04.816662Z
+Buy at 1.09745
+Trading id 5
+Account Balance 100000.0
+Price 1.09756
+
+(falgo) 
+johnfroiland at C02S81V1G8WM in ~/forex_algotrading on master [!]
+$ python ml/ml.py 
+ml.py <inputfile.csv>
+
+(falgo) 
+johnfroiland at C02S81V1G8WM in ~/forex_algotrading on master [!]
+$ python ml/ml.py data/f.csv 
+Done. Goto 0.0.0.0:8000/chart.html
+
+(falgo) 
+johnfroiland at C02S81V1G8WM in ~
+$ cd ~/forex_algotrading/
+
+(falgo) 
+johnfroiland at C02S81V1G8WM in ~/forex_algotrading on master [!?]
+$ sublime ml_results.json 
+
+(falgo) 
+johnfroiland at C02S81V1G8WM in ~/forex_algotrading on master [!?]
+$ sublime ticks.json 
+
+(falgo) 
+johnfroiland at C02S81V1G8WM in ~/forex_algotrading on master [!?]
+$ python -m SimpleHTTPServer
+Serving HTTP on 0.0.0.0 port 8000 ...
+127.0.0.1 - - [15/May/2017 12:21:18] code 404, message File not found
+127.0.0.1 - - [15/May/2017 12:21:18] "GET /chart.html HTTP/1.1" 404 -
+127.0.0.1 - - [15/May/2017 12:21:19] code 404, message File not found
+127.0.0.1 - - [15/May/2017 12:21:19] "GET /chart.html HTTP/1.1" 404 -
+127.0.0.1 - - [15/May/2017 12:21:22] code 404, message File not found
+127.0.0.1 - - [15/May/2017 12:21:22] "GET /chart.html HTTP/1.1" 404 -
+
+(falgo) 
+johnfroiland at C02S81V1G8WM in ~/forex_algotrading on master [!?]
+$ cd ml
+
+(falgo) 
+johnfroiland at C02S81V1G8WM in ~/forex_algotrading/ml on master [!]
+$ python -m SimpleHTTPServer
+Serving HTTP on 0.0.0.0 port 8000 ...
+127.0.0.1 - - [15/May/2017 12:21:48] "GET /chart.html HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2017 12:21:48] code 404, message File not found
+127.0.0.1 - - [15/May/2017 12:21:48] "GET /~/forex_algotrading/ticks.json HTTP/1.1" 404 -
+127.0.0.1 - - [15/May/2017 12:21:52] "GET /chart.html HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2017 12:21:52] code 404, message File not found
+127.0.0.1 - - [15/May/2017 12:21:52] "GET /~/forex_algotrading/ticks.json HTTP/1.1" 404 -
+127.0.0.1 - - [15/May/2017 12:22:14] "GET /chart.html HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2017 12:22:14] code 404, message File not found
+127.0.0.1 - - [15/May/2017 12:22:14] "GET /forex_algotrading/ticks.json HTTP/1.1" 404 -
+127.0.0.1 - - [15/May/2017 12:22:28] "GET /chart.html HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2017 12:22:28] code 404, message File not found
+127.0.0.1 - - [15/May/2017 12:22:28] "GET /ticks.json HTTP/1.1" 404 -
+127.0.0.1 - - [15/May/2017 12:22:44] "GET /chart.html HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2017 12:22:44] "GET /ticks.json HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2017 12:22:44] "GET /ml_results.json HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2017 12:24:44] "GET /chart.html HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2017 12:24:44] "GET /ticks.json HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2017 12:24:44] "GET /ml_results.json HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2017 12:24:47] "GET /chart.html HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2017 12:24:59] "GET /chart.html HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2017 12:25:18] "GET /chart.html HTTP/1.1" 200 -
+
+(falgo) 
+johnfroiland at C02S81V1G8WM in ~/forex_algotrading/ml on master [!?]
+$ cd
+
+(falgo) 
+johnfroiland at C02S81V1G8WM in ~
+$ deactivate
+
+
+johnfroiland at C02S81V1G8WM in ~
+$ git clone https://github.com/oanda/v20-python-samples.git
+Cloning into 'v20-python-samples'...
+remote: Counting objects: 469, done.
+remote: Total 469 (delta 0), reused 0 (delta 0), pack-reused 469
+Receiving objects: 100% (469/469), 84.62 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (289/289), done.
+
+johnfroiland at C02S81V1G8WM in ~
+$ cd v20-python-samples/
+
+johnfroiland at C02S81V1G8WM in ~/v20-python-samples on master
+$ make bootstrap-python2
+
+johnfroiland at C02S81V1G8WM in ~/v20-python-samples on master
+$ source env-python2/bin/activate
+
+(env-python2) 
+johnfroiland at C02S81V1G8WM in ~/v20-python-samples on master
+$ python setup.py develop
+
+(env-python2) 
+johnfroiland at C02S81V1G8WM in ~/v20-python-samples on master
+$ v20-configure
+
+Enter existing v20.conf filename to load [~/.v20.conf]: 
+Config file '~/.v20.conf' doesn't exist, starting with defaults.
+
+
+------------ Intitial v20 configuration ------------
+hostname: None
+streaming_hostname: None
+port: 443
+ssl: true
+token: None
+username: None
+datetime_format: RFC3339
+accounts:
+active_account: None
+----------------------------------------------------
+
+Available environments:
+[0] fxtrade
+[1] fxpractice
+Select environment [0]: 1
+> API host selected is: api-fxpractice.oanda.com
+> Streaming host selected is: stream-fxpractice.oanda.com
+
+Enter username: forexfroiland
+> username is: forexfroiland
+
+Enter personal access token: 605870e2abc4500c4958bcb0980467bb-9ea48428ba09e49c0dec3f60f28301d4
+> Using personal access token: 605870e2abc4500c4958bcb0980467bb-9ea48428ba09e49c0dec3f60f28301d4
+
+Available Accounts:
+[0] 101-001-6001585-001
+Select Active Account [0]: 0
+> Active Account is: 101-001-6001585-001
+
+Available Time Formats:
+[0] RFC3339
+[1] UNIX
+Select Time Format [0]: 1
+
+-------------- New v20 configuration --------------
+hostname: api-fxpractice.oanda.com
+streaming_hostname: stream-fxpractice.oanda.com
+port: 443
+ssl: true
+token: 605870e2abc4500c4958bcb0980467bb-9ea48428ba09e49c0dec3f60f28301d4
+username: forexfroiland
+datetime_format: UNIX
+accounts:
+- 101-001-6001585-001
+active_account: 101-001-6001585-001
+---------------------------------------------------
+
+Dump v20 configuration to ~/.v20.conf? [Yn]: Y
+
+(env-python2) 
+johnfroiland at C02S81V1G8WM in ~/v20-python-samples on master
+$ v20-configure
+
+Enter existing v20.conf filename to load [~/.v20.conf]: 
+
+------------ Intitial v20 configuration ------------
+hostname: api-fxpractice.oanda.com
+streaming_hostname: stream-fxpractice.oanda.com
+port: 443
+ssl: true
+token: 605870e2abc4500c4958bcb0980467bb-9ea48428ba09e49c0dec3f60f28301d4
+username: forexfroiland
+datetime_format: UNIX
+accounts:
+- 101-001-6001585-001
+active_account: 101-001-6001585-001
+----------------------------------------------------
+
+Available environments:
+[0] fxtrade
+[1] fxpractice
+Select environment [1]: 1
+> API host selected is: api-fxpractice.oanda.com
+> Streaming host selected is: stream-fxpractice.oanda.com
+
+Enter username [forexfroiland]: 
+> username is: forexfroiland
+
+Enter personal access token [605870e2abc4500c4958bcb0980467bb-9ea48428ba09e49c0dec3f60f28301d4]: 
+> Using personal access token: 605870e2abc4500c4958bcb0980467bb-9ea48428ba09e49c0dec3f60f28301d4
+
+Available Accounts:
+[0] 101-001-6001585-001
+Select Active Account [0]: 
+> Active Account is: 101-001-6001585-001
+
+Available Time Formats:
+[0] RFC3339
+[1] UNIX
+Select Time Format [1]: 
+
+-------------- New v20 configuration --------------
+hostname: api-fxpractice.oanda.com
+streaming_hostname: stream-fxpractice.oanda.com
+port: 443
+ssl: true
+token: 605870e2abc4500c4958bcb0980467bb-9ea48428ba09e49c0dec3f60f28301d4
+username: forexfroiland
+datetime_format: UNIX
+accounts:
+- 101-001-6001585-001
+active_account: 101-001-6001585-001
+---------------------------------------------------
+
+Dump v20 configuration to ~/.v20.conf? [Yn]: Y
+
+(env-python2) 
+johnfroiland at C02S81V1G8WM in ~
+$ cd v20-python-samples/
+
+(env-python2) 
+johnfroiland at C02S81V1G8WM in ~/v20-python-samples on master
+$ cd src
+ 
+(env-python2) 
+johnfroiland at C02S81V1G8WM in ~/v20-python-samples/src on master
+$ cd pricing/
+
+(env-python2) 
+johnfroiland at C02S81V1G8WM in ~/v20-python-samples/src/pricing on master [!]
+$ v20-account-details
+Account 101-001-6001585-001
+===========================
+
+==========================  ====================
+Account ID                  101-001-6001585-001
+Alias                       Primary
+Home Currency               USD
+Balance                     99999.945
+Created by User ID          6001585
+Create Time                 1494856480.640869466
+Profit/Loss                 0.0
+Margin Rate                 0.02
+Open Trade Count            1
+Open Position Count         1
+Pending Order Count         0
+Hedging Enabled             False
+Unrealized Profit/Loss      0.1
+Net Asset Value             100000.045
+Margin Used                 109.778
+Margin Available            99890.267
+Position Value              5488.9
+Closeout UPL                0.6
+Closeout NAV                100000.545
+Closeout Margin Used        109.768
+Margin Closeout Percentage  0.00055
+Withdrawal Limit            99890.267
+Margin Call Margin Used     109.768
+Margin Call Percentage      0.0011
+Last Transaction ID         6
+==========================  ====================
+
+1 Open Positions
+================
+
+============  =====  ================  ================  ==========
+Instrument      P/L    Unrealized P/L  Long              Short
+============  =====  ================  ================  ==========
+EUR_USD           0               0.1  5000.0 @ 1.09756  0.0 @ None
+============  =====  ================  ================  ==========
+
+
+1 Trades
+========
+
+====  =======  ====================================  ================  =====
+  ID  State    Summary                                 Unrealized P/L    P/L
+====  =======  ====================================  ================  =====
+   5  OPEN     5000.0 (5000.0) of EUR_USD @ 1.09756               0.1      0
+====  =======  ====================================  ================  =====
+
+(env-python2) 
+johnfroiland at C02S81V1G8WM in ~/v20-python-samples/src/pricing on master [!]
+$ v20-pricing-stream -i EUR/JPY
+EUR_JPY (1494882842.627929739) 124.763/124.802
+EUR_JPY (1494882852.648736566) 124.771/124.814
+EUR_JPY (1494882853.648928952) 124.78/124.812
+EUR_JPY (1494882854.692721824) 124.772/124.811
+EUR_JPY (1494882857.465760726) 124.763/124.81
+
+(env-python2) 
+johnfroiland at C02S81V1G8WM in ~/v20-python-samples/src/pricing on master [!]
+$ python stream.py -i EUR/JPY
+EUR_JPY (1494882880.082785620) 124.752/124.8
+EUR_JPY (1494882900.037055385) 124.767/124.791
+EUR_JPY (1494882900.477885162) 124.766/124.801
+EUR_JPY (1494882919.898122688) 124.77/124.804
+
+(env-python2) 
+johnfroiland at C02S81V1G8WM in ~/v20-python-samples/src/pricing on master [!]
+$ python stream.py -i EUR/JPY
+EUR_JPY (1494950847.810573411) 125.304/125.323
+EUR_JPY (1494950856.231468988) 125.308/125.325
+EUR_JPY (1494950859.240798714) 125.311/125.328
+EUR_JPY (1494950859.577089895) 125.308/125.324
+EUR_JPY (1494950861.378312694) 125.304/125.321
+
+(env-python2) 
+johnfroiland at C02S81V1G8WM in ~/v20-python-samples/src/pricing on master [!]
+$ python stream.py -i EUR/JPY
+EUR_JPY (1494951368.087333756) BID: 125.315 ASK: 125.331
+EUR_JPY (1494951377.149213361) BID: 125.318 ASK: 125.335
+EUR_JPY (1494951380.072094856) BID: 125.326 ASK: 125.341
+EUR_JPY (1494951380.711548315) BID: 125.329 ASK: 125.344
+
+(env-python2) 
+johnfroiland at C02S81V1G8WM in ~/v20-python-samples/src/pricing on master [!]
+$ python stream.py -i EUR/JPY
+('Currency: EUR_JPY ', 'Time: 1494958978.515962972 ', 'BID: 125.387 ', 'ASK: 125.405 ')
+('Currency: EUR_JPY ', 'Time: 1494958984.920408786 ', 'BID: 125.384 ', 'ASK: 125.401 ')
+('Currency: EUR_JPY ', 'Time: 1494958985.082613318 ', 'BID: 125.38 ', 'ASK: 125.398 ')
+('Currency: EUR_JPY ', 'Time: 1494958988.377261222 ', 'BID: 125.384 ', 'ASK: 125.4 ')
+('Currency: EUR_JPY ', 'Time: 1494958988.772542368 ', 'BID: 125.38 ', 'ASK: 125.398 ')
+
+(env-python2) 
+johnfroiland at C02S81V1G8WM in ~/v20-python-samples/src/pricing on master [!]
+$ python stream.py -i EUR/JPY
+Currency: EUR_JPY 
+Time: 1494959040.767881534 
+BID: 125.379 
+ASK: 125.396 
+Currency: EUR_JPY 
+Time: 1494959048.667794791 
+BID: 125.376 
+ASK: 125.393 
+Currency: EUR_JPY 
+Time: 1494959050.452590421 
+BID: 125.379 
+ASK: 125.396 
+
+(env-python2) 
+johnfroiland at C02S81V1G8WM in ~/v20-python-samples/src/pricing on master [!]
+$ python stream.py -i EUR/JPY
+Currency: EUR_JPY  Time: 1494959086.658532028 
+BID: 125.375  ASK: 125.393 
+Currency: EUR_JPY  Time: 1494959096.877671957 
+BID: 125.38  ASK: 125.395 
+Currency: EUR_JPY  Time: 1494959098.835283170 
+BID: 125.383  ASK: 125.398 
+
+(env-python2) 
+johnfroiland at C02S81V1G8WM in ~/v20-python-samples/src/pricing on master [!]
+$ python stream.py -i EUR/JPY
+Currency: EUR_JPY  Time: 1494959480.920269200 
+BID: 125.338  ASK: 125.357 
+Currency: EUR_JPY  Time: 1494959510.243245867 
+BID: 125.342  ASK: 125.359 
+
+(env-python2) 
+johnfroiland at C02S81V1G8WM in ~/v20-python-samples/src/pricing on master [!]
+$ python stream.py -i EUR/USD
+Currency: EUR_USD 
+Time: 1494964869.207173005 
+BID: 1.10849 
+ASK: 1.10862 
