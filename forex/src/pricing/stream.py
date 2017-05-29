@@ -281,10 +281,10 @@ def main():
                 print_order_create_response_transactions(trade_response)
                 
 
-            with open('Backtest.csv', 'a') as f:
-                positions.to_csv(f, index=False, header=False, sep=',')
-                positions['Stop'] = 0
-                positions['Pips'] = 0
+            #with open('Backtest.csv', 'a') as f:
+                #positions.to_csv(f, index=False, header=False, sep=',')
+                #positions['Stop'] = 0
+                #positions['Pips'] = 0
                 
 if __name__ == "__main__":
     main()
